@@ -1,0 +1,76 @@
+const mockTeams = [
+  {
+    id: 1,
+    name: "Infrastructure Team",
+    description: "Responsible for maintaining servers, networks, and core IT infrastructure.",
+    adminComments: "Quarterly performance reviewed.",
+    startDate: "2023-01-15",
+    endDate: "2024-12-31",
+    owner: "jdoe",
+    authorizationDocumentPath: "/docs/infrastructure_team_auth.pdf",
+    status: "active",
+    members: [
+      { id: 101, fullName: "Alice Johnson", userName: "alice.j" },
+      { id: 102, fullName: "Bob Smith", userName: "bob.smith" },
+      { id: 103, fullName: "Charlie Kim", userName: "charlie.k" },
+    ],
+    administrators: [
+      { id: 201, fullName: "John Doe", userName: "jdoe" },
+    ],
+  },
+  {
+    id: 2,
+    name: "DevOps Team",
+    description: "Handles CI/CD pipelines, cloud infrastructure, and deployment automation.",
+    adminComments: "Requested additional cloud budget.",
+    startDate: "2022-06-01",
+    endDate: "2025-06-01",
+    owner: "mscott",
+    authorizationDocumentPath: "/docs/devops_team_auth.pdf",
+    status: "active",
+    members: [
+      { id: 104, fullName: "David Lee", userName: "dlee" },
+      { id: 105, fullName: "Eva Martinez", userName: "eva.m" },
+    ],
+    administrators: [
+      { id: 202, fullName: "Michael Scott", userName: "mscott" },
+      { id: 203, fullName: "Pam Beesly", userName: "pam.b" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Security Operations",
+    description: "Monitors systems for suspicious activity and handles security incident response.",
+    adminComments: "Undergoing SOC 2 compliance audit.",
+    startDate: "2023-03-10",
+    endDate: "2024-12-10",
+    owner: "rjenkins",
+    authorizationDocumentPath: "/docs/secops_team_auth.pdf",
+    status: "pending",
+    members: [
+      { id: 106, fullName: "Riley Jenkins", userName: "rjenkins" },
+      { id: 107, fullName: "Fatima Noor", userName: "fatima.n" },
+    ],
+    administrators: [
+      { id: 204, fullName: "Riley Jenkins", userName: "rjenkins" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Help Desk",
+    description: "Provides first-level support for internal IT issues and service requests.",
+    adminComments: "Need to improve ticket response time.",
+    startDate: "2021-09-01",
+    endDate: "2024-09-01",
+    owner: "tclark",
+    authorizationDocumentPath: "/docs/helpdesk_team_auth.pdf",
+    status: "archived",
+    members: [
+      { id: 108, fullName: "Thomas Clark", userName: "tclark" },
+      { id: 109, fullName: "Nancy Rivera", userName: "nancy.r" },
+    ],
+    administrators: [
+      { id: 205, fullName: "Thomas Clark", userName: "tclark" },
+    ],
+  },
+];
